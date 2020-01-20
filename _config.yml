@@ -1,17 +1,15 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: 50dev's Stroy
+author: 50dev
+email: 
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+   평범한 개발자가 50살에도 개발을 할 수 있을까? 하는 궁금증을 갖고 살아가는 이야기를 담는 블로그입니다.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%b %-d, %Y"
+  date_format: "%yyyy-%MM-%dd" #"%b %-d, %Y"
 
   # generate social links in footer
   social_links:
