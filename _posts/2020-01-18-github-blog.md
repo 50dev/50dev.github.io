@@ -1,6 +1,6 @@
 ---
 title: "첫번째 - 블로그 만들기"
-date: 2020-01-18 08:26:28 +0900
+date: 2020-01-18
 categories: jekyll blog
 ---
 
@@ -142,4 +142,3 @@ categories: jekyll blog
 
 - [Working with GitHub Pages](https://help.github.com/en/github/working-with-github-pages)
 - [Jekylly 한국어 사이트](https://jekyllrb-ko.github.io/)
-- 
