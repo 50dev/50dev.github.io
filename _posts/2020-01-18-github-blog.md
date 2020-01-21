@@ -71,7 +71,11 @@ categories: jekyll blog
 
 위와 마찬가지 방법으로, minima 저장소에서 해당 소스를 다운로드 받아, 블로그 프로젝트에 덮어 씌웁니다.
 
-`./_config.yml` 에서 기본적인 정보를 입력합니다.
+
+
+## 기본 설정 변경
+
+`_config.yml` 에서 기본적인 정보를 입력합니다.
 
 ```yml
 title: 50dev's Stroy
@@ -79,12 +83,15 @@ author: 50dev
 email: 
 description: > # this means to ignore newlines until "show_excerpts:"
    평범한 개발자가 50살에도 개발을 할 수 있을까? 하는 궁금증을 갖고 살아가는 이야기를 담는 블로그입니다.
-- 이하 생략 - 
 ```
 
 
 
 `./posts/2020-01-18-github-blog.md` 현재 보이고 있는 블로그 내용을 `markdown` 언어로 작성을 합니다.
+
+
+
+아래는 이렇게 작성할 경우, 실제 <https://50dev.github.io/> 에서 보이는 시작화면입니다.
 
 ---
 
@@ -92,9 +99,43 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 ---
 
+
+
+## 날짜 포멧 변경
+
+템플릿의 기본 날짜 포멧은 `%b %-d, %Y` 입니다. 이 경우, "월(영문명) 일 년" 과 같은 형식으로 표현되기 때문에, 이를 변경해줍니다.
+
+`%Y-%m-%d` 로 변경하면, `2020-01-18` 과 같은 형식으로 보이게 됩니다. 
+
+`_config.yml` 에서 다음과 같이 변경해줍니다.
+
+```yml
+minima:
+  date_format: "%Y-%m-%d" #"%b %-d, %Y"
+```
+
+
+
+# 마치는 글
+
+이제 `_posts/` 폴더에 포스트를 `yyyy-mm-dd-{포스트제목}.md` 형식으로 작성하고, 포스트 상단에 다음과 같은 ymal 머리말을을 덧붙이면, 기본적인 포스트글을 작성할 수 있게 되었습니다.
+
+```markdown
+---
+title: "첫번째 - 블로그 만들기"
+date: 2020-01-18 08:26:28 +0900
+categories: jekyll blog
+---
+```
+
+> 이에 대한 가이드는 다음을 참고하시면 됩니다.
+>
+> - [포스트 작성하기](https://jekyllrb-ko.github.io/docs/posts/)
+
+
+
 # 참고 사이트
 
 - [Working with GitHub Pages](https://help.github.com/en/github/working-with-github-pages)
+- [Jekylly 한국어 사이트](https://jekyllrb-ko.github.io/)
 - 
-- 
-
