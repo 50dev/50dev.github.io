@@ -134,6 +134,10 @@ categories: jekyll blog
 
 
 
+아직 화면 상단이나, 하단의 공통화면 정리가 필요하지만, 일단 포스트를 작성할 수 있는 공간을 만들어 놓은 것으로 이번 포스팅을 마칠까 합니다.
+
+
+
 # 참고 사이트
 
 - [Working with GitHub Pages](https://help.github.com/en/github/working-with-github-pages)
