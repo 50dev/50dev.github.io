@@ -86,12 +86,15 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 `./posts/2020-01-18-github-blog.md` 현재 보이고 있는 블로그 내용을 `markdown` 언어로 작성을 합니다.
 
+---
+
 ![시작페이지]({{"assets/images/2020-01-18-01.png" | relative_url}})
 
-
+---
 
 # 참고 사이트
 
 - [Working with GitHub Pages](https://help.github.com/en/github/working-with-github-pages)
 - 
 - 
+
