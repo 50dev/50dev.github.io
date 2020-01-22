@@ -123,7 +123,7 @@ minima:
 ```markdown
 ---
 title: "첫번째 - 블로그 만들기"
-date: 2020-01-18 08:26:28 +0900
+date: 2020-01-18
 categories: jekyll blog
 ---
 ```
