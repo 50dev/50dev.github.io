@@ -2,4 +2,4 @@
 
 Blog site : <https://50dev.github.io/>
 
-This theme is based (minima)[https://github.com/jekyll/minima]
+This theme is based [minima](https://github.com/jekyll/minima)
