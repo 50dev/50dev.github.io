@@ -12,7 +12,7 @@ categories: jekyll blog
 
 # 시작하기
 
-지난 포스트(![첫번째 - 블로그 만들기]({{ site.baseurl }}{% post_url 2020-01-18-github-blog %})) 에서 간단한 블로그 사이트를 개설해 보았습니다.
+지난 포스트(![첫번째 - 블로그 만들기]({% post_url 2020-01-18-github-blog %})) 에서 간단한 블로그 사이트를 개설해 보았습니다.
 
 
 
