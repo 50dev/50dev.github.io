@@ -84,9 +84,10 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    rss: rss
+    # twitter: jekyllrb
+    # github:  jekyll
+    # rss: rss
+    github: 50dev
     
 # 이하 생략 ...
 ```
@@ -212,6 +213,48 @@ page.title
 # this and add the path to the pages in order as they should show up
 header_pages:
  - common_pages/tooltips.md
+```
+
+
+
+# 하단 소셜 링크 정리하기
+
+`_config.yml` 에 보면 `social_links` 속성이 있습니다.
+
+`_includes/footer.html` 에 보면, 다음과 같이 설정된 부분이 있습니다. 
+
+```html
+			<div class="social-links">
+        {%- include social.html -%}
+      </div>
+```
+
+여기서, `_includes/social.html` 을 살펴보면, 다음과 같습니다.
+
+```html
+{%- assign social = site.minima.social_links -%}
+
+<ul class="social-media-list">
+  {%- if social.dribbble -%}<li><a rel="me" href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" title="{{ social.dribbble | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg></a></li>{%- endif -%}
+  {%- if social.facebook -%}<li><a rel="me" href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" title="{{ social.facebook | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a></li>{%- endif -%}
+
+<!-- 이하 생략 ... -->
+
+```
+
+
+
+위에서 보시면, `site.minima.social_links` 을 가지고, 링크를 구성해주는 것을 알 수 있습니다.
+
+저는 별도의 SNS 가 없으므로 다음과 같이 gitgub 만 설정하도록 합니다.
+
+```
+# generate social links in footer
+  social_links:
+    # twitter: jekyllrb
+    # github:  jekyll
+    # rss: rss
+    github: 50dev
 ```
 
 
