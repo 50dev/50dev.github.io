@@ -181,6 +181,10 @@ page.title
 
 
 
+`{%- assign page_paths = site.header_pages | default: default_paths -%}` 는 `site.header_pages` 정보를 `page_paths` 변수에 할당하고, 만약 해당 값이 없을 경우,  `default` 값을 할당합니다.
+
+
+
 `{%- assign my_page = site.pages | where: "path", path | first -%}` 는 `site.pages` 에서 `path` 속성이 변수 path 인 값을 필터링하여, 첫번째 파일을 `my_page` 에 할당합니다.
 
 
@@ -199,7 +203,7 @@ page.title
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - common_pages
+ - common_pages/tooltips.md
 ```
 
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tooltips
+permalink: /tooltips/
 ---
 
 # 여러가지 블로그를 작성할 때 필요한 편의기능들
