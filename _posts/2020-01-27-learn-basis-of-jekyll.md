@@ -193,14 +193,13 @@ page.title
 
 
 
-현재 `site.pages` 의 값을 바꾸는 법을 알지 못하므로, 루트에 원하는 파일을 넣고, `_config.xml` 에 `header_pages` 속성을 정의하는 것으로 원하는 파일을 표시하도록 하였습니다.
+현재 `site.pages` 의 값을 바꾸는 법을 알지 못하므로, `common_pages` 폴더에 원하는 파일을 넣고, `_config.xml` 에 `header_pages` 속성을 정의하는 것으로 원하는 파일을 표시하도록 하였습니다.
 
 ```yml
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - tooltips.md
- - test/test.md
+ - common_pages
 ```
 
 
