@@ -10,6 +10,12 @@ categories: jekyll blog
 
 
 
+> 현재 이 포스트는 Liquid 문법을 표현하면서, pre-compile 시 문서포멧이 깨지고 있습니다. 
+>
+> 방법을 찾아 수정해야하지만, 우선 포스트가 깨진 상태로 한동안 유지될 것 같습니다. 
+>
+> 참고하시기 바랍니다.
+
 # 시작하기
 
 지난 포스트([첫번째 - 블로그 만들기]({{ site.baseurl }}{% post_url 2020-01-18-github-blog %})) 에서 간단한 블로그 사이트를 개설해 보았습니다.
@@ -40,11 +46,7 @@ layout: home
 
  `---`  로 감싸고 있는 부분이 YAML 머리말(Front Matter) 라고 하며 이런 부분을 통해 각 파일의 메타파일을 저장할 수 있습니다.
 
-- [Jekyll - 
-
-
-
-
+- [Jekyll - 머릿말](https://jekyllrb-ko.github.io/docs/frontmatter/)
 
 
 
@@ -250,11 +252,9 @@ header_pages:
 
 ```yml
 # generate social links in footer
-  social_links:
-    # twitter: jekyllrb
-    # github:  jekyll
-    # rss: rss
-    github: 50dev
+ social_links:
+    github : 50dev
+    rss : rss
 ```
 
 
