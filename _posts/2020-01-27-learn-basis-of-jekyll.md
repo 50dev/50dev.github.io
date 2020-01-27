@@ -175,4 +175,17 @@ page.title
 
 
 
-위 파일을 보면, `page_paths` 의 파일들을 표시하고 있으며, 해당 파일은 
+위 문법은 [Liquid 문법](https://shopify.github.io/liquid/) 을 공부해야 하는데, 일부만 확인하도록 하겠습니다.
+
+ `{%- assign default_paths = site.pages | map: "path" -%}` 는 `site.pages` 정보 중에, `path` 속성값으로 배열을 만들어 이를 `defualt_paths` 변수에 할당합니다.
+
+
+
+`{%- assign my_page = site.pages | where: "path", path | first -%}` 는 `site.pages` 에서 `path` 속성이 변수 path 인 값을 필터링하여, 첫번째 파일을 `my_page` 에 할당합니다.
+
+
+
+
+
+
+
