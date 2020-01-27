@@ -12,7 +12,7 @@ categories: jekyll blog
 
 # 시작하기
 
-지난 포스트([첫번째 - 블로그 만들기]({{ site.baseurl }}{% post_url 2020-01-18-github-blog %})) 에서 간단한 블로그 사이트를 개설해 보았습니다.
+지난 포스트(![첫번째 - 블로그 만들기]({{ site.baseurl }}{% post_url 2020-01-18-github-blog %})) 에서 간단한 블로그 사이트를 개설해 보았습니다.
 
 
 
@@ -156,8 +156,8 @@ page.title
 상단 메뉴는 다음 파일에서 `_includes/header.html` 에서 다음과 같이 설정되어 있습니다.
 
 ```html
-			{%- assign default_paths = site.pages | map: "path" -%}
-  	  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  	  {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
 				<!-- 중간생략... -->
 				<div class="trigger">
           {%- for path in page_paths -%}
@@ -177,15 +177,23 @@ page.title
 
 위 문법은 [Liquid 문법](https://shopify.github.io/liquid/) 을 공부해야 하는데, 일부만 확인하도록 하겠습니다.
 
- `{%- assign default_paths = site.pages | map: "path" -%}` 는 `site.pages` 정보 중에, `path` 속성값으로 배열을 만들어 이를 `defualt_paths` 변수에 할당합니다.
+```html
+{%- assign default_paths = site.pages | map: "path" -%}
+```
 
+- `site.pages` 정보 중에, `path` 속성값으로 배열을 만들어 이를 `defualt_paths` 변수에 할당합니다.
 
+```html
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+```
 
-`{%- assign page_paths = site.header_pages | default: default_paths -%}` 는 `site.header_pages` 정보를 `page_paths` 변수에 할당하고, 만약 해당 값이 없을 경우,  `default` 값을 할당합니다.
+- `site.header_pages` 정보를 `page_paths` 변수에 할당하고, 만약 해당 값이 없을 경우,  `default` 값을 할당합니다.
 
+```html
+{%- assign my_page = site.pages | where: "path", path | first -%}
+```
 
-
-`{%- assign my_page = site.pages | where: "path", path | first -%}` 는 `site.pages` 에서 `path` 속성이 변수 path 인 값을 필터링하여, 첫번째 파일을 `my_page` 에 할당합니다.
+- `site.pages` 에서 `path` 속성이 변수 path 인 값을 필터링하여, 첫번째 파일을 `my_page` 에 할당합니다.
 
 
 
