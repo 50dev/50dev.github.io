@@ -86,7 +86,7 @@ minima:
   social_links:
     # twitter: jekyllrb
     # github:  jekyll
-    # rss: rss
+    rss: rss
     github: 50dev
     
 # 이하 생략 ...
@@ -248,7 +248,7 @@ header_pages:
 
 저는 별도의 SNS 가 없으므로 다음과 같이 gitgub 만 설정하도록 합니다.
 
-```
+```yml
 # generate social links in footer
   social_links:
     # twitter: jekyllrb
