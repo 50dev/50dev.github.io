@@ -15,5 +15,5 @@ permalink: /tooltips/
 ## 블로그 링크걸기
 
 ```
-![첫번째 - 블로그 만들기]({{ site.baseurl }}{% post_url 2020-01-18-github-blog %})
+[첫번째 - 블로그 만들기]({{ site.baseurl }}{% post_url 2020-01-18-github-blog %})
 ```
