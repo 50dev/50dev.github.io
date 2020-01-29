@@ -4,7 +4,7 @@ date: 2020-01-27
 categories: jekyll blog
 ---
 
-
+{% raw %}
 
 이번 포스트에서 간단히  Jekyll 을 공부하고, 간단한 설정을 변경해 봅니다.
 
@@ -257,7 +257,7 @@ header_pages:
     rss : rss
 ```
 
-
+{% endraw %}
 
 
 
